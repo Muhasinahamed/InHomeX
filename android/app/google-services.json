@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464501085820",
+    "project_id": "inhomex-0219",
+    "storage_bucket": "inhomex-0219.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464501085820:android:b9caae80737d0d94449bf9",
+        "android_client_info": {
+          "package_name": "com.example.inhomex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD2-hDK1xA2YcCdJc1Z5AM93hm9vAlxAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
