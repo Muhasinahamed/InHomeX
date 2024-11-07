@@ -1,8 +1,17 @@
-platform :ios, '13.0'
+# Uncomment this line to define a global platform for your project
+platform :ios, '12.0'
+
+# CocoaPods analytics sends anonymous usage statistics
+# Please report any issues you encounter to https://github.com/CocoaPods/CocoaPods/issues
+# root = File.dirname(File.realpath(__FILE__))
+
+flutter_application_path = '../..'
+load File.join(flutter_application_path, 'packages', 'flutter_tools', 'bin', 'podhelper.rb')
 
 target 'Runner' do
+  # Pods for Runner
   use_frameworks!
-  use_modular_headers!
+  pod 'Firebase/Core'
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
