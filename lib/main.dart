@@ -74,8 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
       if (kDebugMode) {
-        print("count:\n");
-        print(_counter);
+        print("count :$_counter");
       }
     });
   }
