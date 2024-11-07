@@ -1,17 +1,17 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+# Define a global platform for your project
+platform :ios, '13.0'  # Updated to 13.0 to support Firebase Core requirements
 
 flutter_application_path = ENV['FLUTTER_ROOT'] || '/path/to/flutter/sdk'
 load File.join(flutter_application_path, 'packages', 'flutter_tools', 'bin', 'podhelper.rb')
 
 target 'Runner' do
-  # Comment the next line if you don't want to use dynamic frameworks
+  # Use dynamic frameworks and modular headers (needed for Firebase and Flutter)
   use_frameworks!
   use_modular_headers!
   
-  # Add Firebase pods
+  # Add Firebase Core pod (updated syntax for Firebase in Flutter)
   pod 'Firebase/Core'
-  
+
   # Run Flutter pod install helper
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 
@@ -19,5 +19,4 @@ target 'Runner' do
     inherit! :search_paths
     # Pods for testing
   end
-
 end
