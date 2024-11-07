@@ -1,11 +1,19 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
+flutter_application_path = '../..'
+load File.join(flutter_application_path, 'packages', 'flutter_tools', 'bin', 'podhelper.rb')
+
 target 'Runner' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for Runner
+  use_modular_headers!
+  
+  # Add Firebase pods
+  pod 'Firebase/Core'
+  
+  # Run Flutter pod install helper
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 
   target 'RunnerTests' do
     inherit! :search_paths
